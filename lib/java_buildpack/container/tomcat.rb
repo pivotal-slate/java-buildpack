@@ -64,7 +64,10 @@ module JavaBuildpack
       private
 
       def web_inf?
-        (@application.root + 'WEB-INF').exist?
+        path = (@application.root + 'WEB-INF')
+        result = path.exist?
+        puts "path = #{path}, result = #{result}"
+        result
       end
 
     end
