@@ -57,6 +57,7 @@ module JavaBuildpack
 
       # (see JavaBuildpack::Component::ModularComponent#supports?)
       def supports?
+        puts "PWA was here!!!"
         web_inf? && !JavaBuildpack::Util::JavaMainUtils.main_class(@application)
       end
 
