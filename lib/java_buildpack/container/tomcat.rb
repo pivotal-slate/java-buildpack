@@ -67,6 +67,7 @@ module JavaBuildpack
         path = (@application.root + 'WEB-INF')
         result = path.exist?
         puts "path = #{path}, result = #{result}"
+        puts Dir.glob(@application.root)
         result
       end
 
